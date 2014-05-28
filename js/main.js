@@ -34,6 +34,16 @@
         // add back-to-top links
         $sections.append('<a href="#top" class="back-to-top">Back to top</a>');
 
+        // track links
+        $(document).on('click', '.flexslider .cta', function(e) {
+            e.preventDefault();
+            trackOutboundEvent( this, 'Preschool Slideshow Links', 'Click' );
+        });
+        $(document).on('click', '.primary-menu a', function(e) {
+            e.preventDefault();
+            trackOutboundEvent( this, 'Preschool Primary Menu Links', 'Click' );
+        });
+
         function addSearchDropdown() {
 
             $('.search-menu-item a').click( function() {
