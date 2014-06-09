@@ -837,6 +837,29 @@ body, .jPanelMenu .jPanelMenu-panel {
         display: none;
     }
 
+    .features-element .promo-ribbon-fg,
+    .features-element .promo-ribbon-bg {
+        display: block;
+        position: absolute;
+        top: -14px;
+        left: -12px;
+    }
+    .features-element .promo-ribbon-fg {
+        z-index: 2;
+        width: 148px;
+        height: 155px;
+        background: url('//www.harker.org/uploaded/themes/preschool/images/summer-corner-fg-triangle.png') no-repeat;
+        text-indent: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .features-element .promo-ribbon-bg {
+        z-index: 0;
+        width: 162px;
+        height: 170px;
+        background: url('//www.harker.org/uploaded/themes/preschool/images/summer-corner-bg-shadows.png') no-repeat;
+    }
+
     .features-element .border-top, .features-element .border-bottom {
         display: none;
     }
@@ -2400,6 +2423,13 @@ button, input[type="button"], input[type="submit"] {
 
 @media screen and (max-width: 1024px) {
 
+
+    .features-element .promo-ribbon-fg,
+    .features-element .promo-ribbon-bg {
+        top: 0;
+        left: 14px;
+    }
+
     .pagenav.fixed {
         width: 100%;
         border-width: 0 0 1px;
@@ -2564,6 +2594,11 @@ button, input[type="button"], input[type="submit"] {
 }
 
 @media only screen and (max-width: 44em) { /* 16px * 1.375em * 32em / 16px */
+
+    .features-element .promo-ribbon-fg,
+    .features-element .promo-ribbon-bg {
+        display: none;
+    }
 
     .flexslider .slides img, .features-element img {
         display: none;
